@@ -4,6 +4,10 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
+const defaultPort = 3000;
+const defaultHost = '0.0.0.0';
+const { PORT, HOST, LESSON } = process.env;
+
 module.exports = {
   entry: [
     'babel-polyfill',
@@ -30,13 +34,14 @@ module.exports = {
   },
   devServer: {
     contentBase: path.resolve(__dirname, 'build'),
-    host: '192.168.1.102',
-    port: 7771,
+    host: HOST || defaultHost,
+    port: PORT || defaultPort,
     stats: 'errors-only',
     open: true,
     hot: true,
   },
   plugins: [
+    new webpack.DefinePlugin({ LESSON }),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       favicon: 'src/images/js.ico'
