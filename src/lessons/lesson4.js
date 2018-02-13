@@ -1,11 +1,11 @@
 import config from '../config';
 import { Right, Left } from './lesson3';
 
-const confStr = JSON.stringify(config); // unnecessary operations -- only for remarkable example
+export const confStr = JSON.stringify(config); // unnecessary operations -- only for remarkable example
 
 const defaultPort = 3000;
 
-const tryCatch = f => {
+export const tryCatch = f => {
   try {
     return Right(f())
   } catch(e) {
@@ -14,12 +14,12 @@ const tryCatch = f => {
 };
 
 const getPort = () => {
-    try {
-      const obj = JSON.parse(confStr);
-      return obj.port;
-    } catch(e) {
-      return defaultPort;
-    }
+  try {
+    const obj = JSON.parse(confStr);
+    return obj.port;
+  } catch(e) {
+    return defaultPort;
+  }
 };
 
 const getPort1 = str =>
