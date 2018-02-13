@@ -9,6 +9,7 @@ const defaultHost = '0.0.0.0';
 const { PORT, HOST, LESSON } = process.env;
 
 module.exports = {
+  target: 'web',
   entry: [
     'babel-polyfill',
     './build/functionalJS.js',
@@ -48,4 +49,6 @@ module.exports = {
     }),
   ],
   devtool: 'inline-source-map',
+  // externals: {readFileSync: 'readFileSync'},
+  // node: { fs: true },
 };
