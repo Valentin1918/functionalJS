@@ -3,6 +3,7 @@ import lesson2 from './lessons/lesson2';
 import lesson3 from './lessons/lesson3';
 import lesson4 from './lessons/lesson4';
 import lesson5 from './lessons/lesson5';
+import lesson90 from './lessons/myEE';
 
 export default {
   lesson1,
@@ -10,4 +11,5 @@ export default {
   lesson3,
   lesson4,
   lesson5,
+  lesson90,
 }
