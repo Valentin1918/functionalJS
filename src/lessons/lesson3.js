@@ -1,3 +1,4 @@
+// Enforce a null check with composable code branching using Either
 export const Right = x =>
   ({
     chain: f => f(x),

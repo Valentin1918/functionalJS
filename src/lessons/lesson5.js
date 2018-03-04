@@ -1,3 +1,5 @@
+// A collection of Either examples compared to imperative code
+
 // imperative code VS functional examples
 // import { fs } from 'node-libs-browser'; // fs there is null
 // import readFileSync from 'readFileSync'; // tried to use externals

@@ -1,3 +1,4 @@
+// Refactor imperative code to a single composed expression using Box
 import { Box } from './lesson1';
 
 const price = '$5.00';

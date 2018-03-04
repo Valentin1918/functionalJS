@@ -1,3 +1,4 @@
+// Create linear data flow with container style types (Box)
 const expStr = ' 64 ';
 
 const nextCharForNumberString = str =>
