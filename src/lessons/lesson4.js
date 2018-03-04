@@ -1,3 +1,4 @@
+// Use chain for composable error handling with nested Eithers
 import config from '../config';
 import { Right, Left } from './lesson3';
 
