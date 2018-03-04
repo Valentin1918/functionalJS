@@ -25,7 +25,7 @@ const first = xs =>
   xs.reduce((acc, x) => acc);
 
 const resfirst = first([1,2,3]);
-const res2first = first([]);
+// const res2first = first([]);
 
 /** running area */
 const call = consoleStyle => {
@@ -34,7 +34,7 @@ const call = consoleStyle => {
   console.log(`%c ressum ${ressum}`, consoleStyle);
   console.log(`%c resall ${resall}`, consoleStyle);
   console.log(`%c resfirst ${resfirst}`, consoleStyle);
-  console.log(`%c res2first ${res2first}`, consoleStyle);
+  // console.log(`%c res2first ${res2first}`, consoleStyle);
 };
 /** ------------ */
 
