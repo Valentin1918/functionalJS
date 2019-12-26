@@ -58,5 +58,6 @@ const call = consoleStyle => {
   console.log(`%c yourEE ${yourEE.emit('log4', 'Vasia', 'Petia', 'Didko')}`, consoleStyle);
 };
 /** ------------ */
-
+//TODO: add unsubscribe method returned from ON method;
+//TODO: instead of making separate object fro onec callbacks, ONCE will wrap a cb by correspondent unsubscribe method;
 export default call;
